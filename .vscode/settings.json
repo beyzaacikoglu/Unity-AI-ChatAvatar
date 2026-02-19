@@ -66,5 +66,5 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "AIAvatarVR2.sln"
+    "dotnet.defaultSolution": "Unity-ChatAvatar-Project 3.sln"
 }
