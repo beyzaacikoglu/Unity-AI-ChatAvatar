@@ -51,3 +51,55 @@ Assets/
  ├─ UI/
 Packages/
 ProjectSettings/
+## ⚙️ Kurulum ve Çalıştırma Notları
+
+Bu proje, Unity üzerinden çalıştırılmadan önce **sahne ve bileşen eşleştirmeleri** gerektirmektedir.
+
+### 🖼️ UI ve Sahne Ayarları
+
+Projeyi kendi bilgisayarınıza çektikten sonra:
+
+- **Assets** klasörü içindeki  
+  - `Canvas 1`
+  - `Player 2`  
+  nesneleri **Hierarchy** penceresine sürükleyip bırakmanız gerekmektedir.
+
+Bu işlem yapıldığında:
+- UI bileşenleri sahnede aktif hale gelir
+- Avatar ile etkileşim sorunsuz şekilde çalışır
+
+Bu adım test edilmiştir ve sistem bu şekilde doğru çalışmaktadır.
+
+---
+
+### 🤖 Yapay Zekâ Servisi (OpenRouter)
+
+Projede yapay zekâ yanıtları için **OpenRouter API** kullanılmıştır.
+
+> ⚠️ Güvenlik ve kota nedenleriyle **API Key paylaşılmamıştır**.
+
+Bu nedenle:
+- Kod içerisindeki API key alanı **bilinçli olarak boş bırakılmıştır**
+- Projeyi çalıştırmak isteyen kullanıcıların:
+  - Kendi OpenRouter hesabından API key alması
+  - İlgili script dosyasına bu anahtarı eklemesi gerekmektedir
+
+---
+
+### 🎭 Animasyon Sistemi
+
+Avatar animasyonları Unity **Animator** sistemi üzerinden kontrol edilmektedir.
+
+Animasyonların çalışması için:
+1. **Hierarchy** üzerinden `Player 2` seçilmelidir
+2. **Animator** bileşeninde ilgili animasyonlar aktif durumdadır
+3. `Player 2` seçildiğinde animasyonların düzgün çalıştığı gözlemlenmiştir
+
+Bu yapı proje içerisinde test edilmiş ve stabil şekilde çalışmaktadır.
+
+---
+
+### 📝 Not
+
+Bu repo, projenin **bireysel geliştirme ve entegrasyon** kısmını temsil etmektedir.  
+API anahtarları ve bazı ayarlar **bilinçli olarak dışarıda bırakılmıştır**.
